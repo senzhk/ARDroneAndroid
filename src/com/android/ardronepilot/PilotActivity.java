@@ -2,22 +2,16 @@ package com.android.ardronepilot;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup.MarginLayoutParams;
-import android.widget.TextView;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.location.GpsSatellite;
-import android.location.GpsStatus;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.location.LocationProvider;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 public class PilotActivity extends Activity implements LocationListener, SensorEventListener {
 
@@ -124,8 +118,7 @@ public class PilotActivity extends Activity implements LocationListener, SensorE
 	public void startSensors() {
 			if (mLocationManager == null) {
                 mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-                if (mLocationManager != null) {
-                    // mGpsLocListener = new GpsLocationListener();
+                if (mLocationManager != null) {                   
                 	mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
                          1000 /* minTime ms */,
                          1 /* minDistance in meters */,
