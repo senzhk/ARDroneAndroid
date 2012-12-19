@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+
+ >
+
+<TableLayout 
+    
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent"
+    android:background="#fff"
+ >
+  <TableRow> 
+        <Button 
+            android:text="Connect"
+  			android:id="@+id/connect"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            />
+        <Button 
+            android:text="Disconnect"
+  			android:id="@+id/disconnect" 	
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            /> 
+    </TableRow> 
+ 
+   <TableRow> 
+        <Button 
+            android:text="Takeoff"
+            android:id="@+id/takeoff"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            />
+        <Button 
+            android:text="Landing"
+            android:id="@+id/landing"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            /> 
+    </TableRow> 
+ 
+   <TableRow> 
+        <Button 
+            android:text="Up"
+            android:id="@+id/up"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            />
+        <Button 
+            android:text="Down"
+            android:id="@+id/down"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            /> 
+    </TableRow> 
+ 
+     <TableRow> 
+        <Button 
+            android:text="Rotate Left"
+            android:id="@+id/rol"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            />
+        <Button 
+            android:text="Rotate Right"
+            android:id="@+id/ror"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            /> 
+    </TableRow> 
+    
+     <TableRow> 
+        <Button 
+            android:text="Forward"
+            android:id="@+id/forward"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            />
+        <Button 
+            android:text="Backward"
+            android:id="@+id/backward"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            /> 
+    </TableRow> 
+ 
+ 
+     <TableRow> 
+        <Button 
+            android:text="Hover"
+            android:id="@+id/hover"
+  			android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent"
+    		android:onClick="onClick"
+            />
+      
+    </TableRow> 
+ 
+ </TableLayout>
+ 
+<TextView 
+android:id="@+id/statusBox"
+android:layout_height="wrap_content" 
+android:layout_width="fill_parent"
+android:textColor="#000"
+/>
+    
+</LinearLayout>
